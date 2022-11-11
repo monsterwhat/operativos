@@ -1,15 +1,13 @@
-/*
- * https://www.baeldung.com/java-dining-philoshophers
- */
+package ProyectoConcurrent.DinningPhilosofer;
 
 public class Philosopher implements Runnable {
  
     // Member variables, standard constructor
     // The forks on either side of this Philosopher 
-    private Object leftFork;
-    private Object rightFork;
+    private Palillo leftFork;
+    private Palillo rightFork;
  
-    public Philosopher(Object leftFork, Object rightFork) {
+    public Philosopher(Palillo leftFork, Palillo rightFork) {
         this.leftFork = leftFork;
         this.rightFork = rightFork;
     }
